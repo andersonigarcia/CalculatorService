@@ -3,9 +3,9 @@ using CalculatorService.Domain.Core.Messaging;
 
 namespace CalculatorService.Application.Calculadora.Queries
 {
-    public class GetTodosValoresQuery : Query<TodosValoresResponse>
+    public class GetDividersAndCousinsNumberQuery : Query<DividersAndCousinsNumberResponse>
     {
-        public GetTodosValoresQuery(int value) => Value = value;
+        public GetDividersAndCousinsNumberQuery(int value) => Value = value;
         public int Value { get; set; }
     }
 }

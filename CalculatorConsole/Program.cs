@@ -1,7 +1,5 @@
 ﻿using CalculatorService.Application.Calculadora.Queries.Responses;
 using System;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace CalculatorConsole
 {
@@ -11,16 +9,15 @@ namespace CalculatorConsole
         {
             Console.Title = Constants.Title;
             Console.WriteLine(Constants.SubTitle);
-            Console.WriteLine(Constants.MessageInitial);
 
-            var numero = Helper.ReadValue(Constants.InformNumber);
+            var number = Helper.ReadValue(Constants.InformNumber);
 
-            var dividers = new DivisoresResponse(numero);
-            var cousins = new PrimosResponse(dividers.Divisores);
+            var dividers = new DividersResponse(number);
+            var cousins = new CousinsResponse(dividers.Dividers);
 
-            Console.WriteLine(string.Format(Constants.ResultNumberInput, numero));
-            Console.WriteLine(string.Format(Constants.ResultNumberDividers, string.Join(" ", dividers.Divisores.ToArray())));
-            Console.WriteLine(string.Format(Constants.ResultNumberCousins, string.Join(" ", cousins.Primos.ToArray())));
+            Console.WriteLine(string.Format(Constants.ResultNumberInput, number));
+            Console.WriteLine(string.Format(Constants.ResultNumberDividers, string.Join(" ", dividers.Dividers.ToArray())));
+            Console.WriteLine(string.Format(Constants.ResultNumberCousins, string.Join(" ", cousins.Cousins.ToArray())));
 
             Console.WriteLine();
             Console.ReadKey();

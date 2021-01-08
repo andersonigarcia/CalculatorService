@@ -20,9 +20,9 @@ namespace CalculatorService.IoC
                 }
             });
                         
-            services.AddTransient<IRequestHandler<GetDivisoresQuery, DivisoresResponse>, GetDivisoresQueryHandler>();
-            services.AddTransient<IRequestHandler<GetPrimosQuery, PrimosResponse>, GetPrimosQueryHandler>();
-            services.AddTransient<IRequestHandler<GetTodosValoresQuery, TodosValoresResponse>, GetTodosValoresQueryHandler>();
+            services.AddTransient<IRequestHandler<GetDividersQuery, DividersResponse>, GetDivisoresQueryHandler>();
+            services.AddTransient<IRequestHandler<GetCousinsQuery, CousinsResponse>, GetPrimosQueryHandler>();
+            services.AddTransient<IRequestHandler<GetDividersAndCousinsNumberQuery, DividersAndCousinsNumberResponse >, DividersAndCousinsNumberQueryHandler>();
         }
     }
 }

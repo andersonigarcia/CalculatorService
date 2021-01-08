@@ -4,9 +4,9 @@ using CalculatorService.Domain.Core.Messaging;
 
 namespace CalculatorService.Application.Calculadora.Queries
 {
-    public class GetDivisoresQuery : Query<DivisoresResponse>
+    public class GetDividersQuery : Query<DividersResponse>
     {
-        public GetDivisoresQuery(int value) => Numero = value;
-        public int Numero { get; set; }
+        public GetDividersQuery(int value) => Number = value;
+        public int Number { get; set; }
     }
 }
