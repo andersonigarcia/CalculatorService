@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using CalculatorService.Application.Calculadora.Queries.Responses;
+﻿using CalculatorService.Application.Calculadora.Queries.Responses;
 using CalculatorService.Domain.Core.Messaging;
 
 namespace CalculatorService.Application.Calculadora.Queries

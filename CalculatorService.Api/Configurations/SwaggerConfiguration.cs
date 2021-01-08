@@ -15,7 +15,6 @@ using System.Reflection;
 
 namespace CalculatorService.Api.Configurations
 {
-    //TODO: Move to SDK
     public static class SwaggerConfiguration
     {
         public static void AddSwagger(this IServiceCollection services, IConfiguration configuration)
@@ -57,7 +56,6 @@ namespace CalculatorService.Api.Configurations
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 options.IncludeXmlComments(xmlPath);
             });
-
             services.AddSwaggerGenNewtonsoftSupport();
         }
 
