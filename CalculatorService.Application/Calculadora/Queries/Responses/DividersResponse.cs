@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace CalculatorService.Application.Calculadora.Queries.Responses
 {
@@ -10,6 +11,7 @@ namespace CalculatorService.Application.Calculadora.Queries.Responses
         }
 
         private readonly int Number;
+        [JsonProperty("Divisores")]
         public List<int> Dividers
         {
             get => DecomposeInDividers();
