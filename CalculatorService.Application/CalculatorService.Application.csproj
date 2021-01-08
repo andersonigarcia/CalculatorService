@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Calculadora\Commands\Responses\**" />
+    <EmbeddedResource Remove="Calculadora\Commands\Responses\**" />
+    <None Remove="Calculadora\Commands\Responses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Calculadora\Handlers\ve-597E.tmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Calculadora\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorService.Domain\CalculatorService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

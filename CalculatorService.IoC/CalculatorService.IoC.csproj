@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorService.Application\CalculatorService.Application.csproj" />
+    <ProjectReference Include="..\CalculatorService.Domain\CalculatorService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
